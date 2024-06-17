@@ -1,4 +1,4 @@
-# debian
+# Debian12
 
 ```bash
 apt update
