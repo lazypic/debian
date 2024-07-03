@@ -1,5 +1,22 @@
 # Debian12
 
+소스 리스트를 추가합니다.
+
+```bash
+vi /etc/apt/sources.list
+```
+
+```
+deb http://deb.debian.org/debian bookworm main non-free-firmware
+deb-src http://deb.debian.org/debian bookworm main non-free-firmware
+
+deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+
+deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
+deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
+```
+
 ```bash
 apt update
 apt upgrade
