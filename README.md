@@ -24,7 +24,12 @@ apt update
 apt upgrade
 apt install -y htop vim git mpv bat audacious nfs-common ffmpeg openimageio-tools curl rsync golang
 ```
+## 터미널 핫키
 
+설정 > 키보드 > 바로가기 > 사용자 바로가기
+
+- Terminal
+- gnome-terminal
 
 ## 개인백업
 
