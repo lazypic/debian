@@ -3,7 +3,7 @@
 ```bash
 apt update
 apt upgrade
-apt install -y htop vim git mpv bat audacious nfs-common ffmpeg openimageio-tools curl rsync golang nfs-common
+apt install -y htop vim git mpv bat audacious nfs-common ffmpeg openimageio-tools curl rsync golang
 ```
 
 
