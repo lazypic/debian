@@ -17,6 +17,8 @@ deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
 deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
 ```
 
+패키지를 설치합니다.
+
 ```bash
 apt update
 apt upgrade
