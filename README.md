@@ -22,7 +22,7 @@ deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
 ```bash
 apt update
 apt upgrade
-apt install -y htop vim git mpv bat audacious nfs-common ffmpeg openimageio-tools curl rsync golang mpg123
+apt install -y htop vim git mpv bat audacious nfs-common ffmpeg openimageio-tools curl rsync golang mpg123 gcolor3
 ```
 ## 터미널 핫키
 
