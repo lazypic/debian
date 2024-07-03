@@ -31,6 +31,16 @@ apt install -y htop vim git mpv bat audacious nfs-common ffmpeg openimageio-tool
 - Terminal
 - gnome-terminal
 
+## 터미널 비프음 제거
+
+```
+sudo vim /etc/inputrc
+```
+
+```
+set bell-style none # 21줄 주석제거하기
+```
+
 ## 개인백업
 
 ```bash
