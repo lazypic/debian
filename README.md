@@ -63,3 +63,16 @@ AutomaticLogin = jason
 ```
 
 설정 > 개인정보 > 화면 > 자동화면 잠금 끄기
+
+
+## OpenVPN
+
+Lazypic 관리자로부터 온 이메일 내부 VPN키를 /etc/openvpn/client.conf 이름으로 복사합니다.
+
+```bash
+sudo apt install openvpn
+sudo cp ~/jason_lazypic_org.ovpn /etc/openvpn/client.conf
+sudo systemctl start openvpn@client
+sudo systemctl status openvpn@client
+sudo systemctl stop openvpn@client
+```
