@@ -1,6 +1,9 @@
 # Debian12
 
-소스 리스트를 추가합니다.
+하드웨어 지원이 잘 되기 때문에 개인 업무용 노트북 또는 여러 디스크의 연결이 필요없는 데스크탑, 노트북등에서 사용합니다.
+롤링 릴리즈 OS가 아니고 OpenZFS 처럼 강력한 파일시스템은 아니기 때문에 대규모 인프라에서는 사용하지 않습니다.
+
+## add sources
 
 ```bash
 vi /etc/apt/sources.list
@@ -17,7 +20,7 @@ deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
 deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
 ```
 
-패키지를 설치합니다.
+install pkg
 
 ```bash
 apt update
