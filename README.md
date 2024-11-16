@@ -41,11 +41,13 @@ sudo vim /etc/inputrc
 set bell-style none # 21줄 주석제거하기
 ```
 
-## 개인백업
+## 마운트방법
 
 ```bash
 mount -t nfs 10.1.0.11:/home/jason/nfs /backup
 ```
+
+## Crontab을 이용한 개인백업
 
 crontab -e
 
