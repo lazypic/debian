@@ -76,32 +76,3 @@ sudo systemctl start openvpn@client
 sudo systemctl status openvpn@client
 sudo systemctl stop openvpn@client
 ```
-
-## HWP
-
-Lazypic 나스에서 app/ubuntu_hwp 폴더에서 아래 파일을 다운로드 받습니다.
-
-```bash
-sudo dpkg -i hoffice-hwp_11.20.0.989_amd64.deb
-```
-
-한글아이콘 실행시 실행방법을 수정하기 위해서 관련 파일을 편집합니다.
-
-```bash
-sudo vim /usr/share/applications/hoffice11-hwp.desktop
-```
-
-`hoffice11-hwp.desktop` 파일 중간쯤 Exec 부분을 아래처럼 변경합니다.
-
-```bash
-Exec=/bin/bash -c "LANGUAGE=ko_KR /opt/hnc/hoffice11/Bin/hwp %f"
-```
-
-엔터와 백스페이스 지원하도록 바꾸기(우분투는 되고 debian은 되지 않음)
-
-```bash
-gsettings set org.freedesktop.ibus.engine.hangul use-event-forwarding false
-```
-
-- 한글에서 사용할 폰트경로: /opt/hnc/hoffice11/Shared/TTF/Install
-
