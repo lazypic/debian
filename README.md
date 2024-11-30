@@ -83,3 +83,16 @@ sudo systemctl start openvpn@client
 sudo systemctl status openvpn@client
 sudo systemctl stop openvpn@client
 ```
+
+## Nvidia setting
+
+드라이버 다운로드 후 실행 권한 부여.
+
+Debian 부팅 시 GRUB 메뉴가 나타나면, 부팅할 커널 항목을 선택하고 e 키를 눌러 편집 모드로 들어가.
+linux 줄을 찾아서 끝에 systemd.unit=multi-user.target을 추가 후 F10
+
+```bash
+sudo apt-get install linux-headers-$(uname -r)
+sudo apt-get install build-essential dkms
+```
+
