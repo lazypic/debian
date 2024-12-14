@@ -46,30 +46,13 @@ sudo vim /etc/inputrc
 set bell-style none # 21줄 주석제거하기
 ```
 
-## 마운트방법
+## Git setting
 
 ```bash
-mount -t nfs 10.1.0.11:/home/jason/nfs /backup
+git config --global credential.helper store # git id,pw 저장
+git config --global user.name "Jason"
+git config --global user.email jason@lazypic.org
 ```
-
-## Crontab을 이용한 개인백업
-
-crontab -e
-
-```
-0 * * * * rsync -avz --delete /home/jason /backup
-```
-
-## 암호제거
-
-vim /etc/gdm3/daemon.conf
-
-```
-AutomaticLoginEnable = true
-AutomaticLogin = jason
-```
-
-설정 > 개인정보 > 화면 > 자동화면 잠금 끄기
 
 
 ## OpenVPN
