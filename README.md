@@ -81,6 +81,8 @@ sudo apt-get install build-essential dkms
 
 ## mail client
 
+메일 클라이언트를 썬더버드로 수정합니다.
+
 ```bash
 xdg-settings set default-url-scheme-handler mailto thunderbird.desktop
 ```
