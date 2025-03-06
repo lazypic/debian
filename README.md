@@ -79,3 +79,9 @@ sudo apt-get install linux-headers-$(uname -r)
 sudo apt-get install build-essential dkms
 ```
 
+## mail client
+
+```bash
+xdg-settings set default-url-scheme-handler mailto thunderbird.desktop
+```
+
