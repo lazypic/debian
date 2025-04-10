@@ -27,8 +27,9 @@ install pkg
 ```bash
 apt update
 apt upgrade
-apt install -y htop vim neovim git mpv bat audacious nfs-common ffmpeg openimageio-tools curl rsync golang mpg123 gcolor3 sendmail mpack mutt vim-gtk3
+apt install -y htop vim neovim git mpv bat audacious nfs-common ffmpeg openimageio-tools curl rsync golang mpg123 gcolor3 sendmail mpack mutt vim-gtk3 libnotify-bin
 ```
+
 ## 터미널 핫키
 
 설정 > 키보드 > 바로가기 > 사용자 바로가기
