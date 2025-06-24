@@ -28,6 +28,7 @@ install pkg
 apt update
 apt upgrade
 apt install -y htop vim neovim git mpv bat audacious nfs-common ffmpeg openimageio-tools curl rsync golang mpg123 gcolor3 sendmail mpack mutt vim-gtk3 libnotify-bin
+apt install pandoc fonts-nanum texlive-xetex mdp
 ```
 
 ## 터미널 핫키
