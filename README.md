@@ -52,7 +52,7 @@ set bell-style none # 21줄 주석제거하기
 
 ```bash
 git config --global credential.helper store # git id,pw 저장
-git config --global user.name "Jason"
+git config --global user.name "Jason.HW Kim"
 git config --global user.email jason@lazypic.com
 ```
 
