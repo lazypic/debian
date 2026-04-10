@@ -83,7 +83,7 @@ sudo apt-get install build-essential dkms
 
 ## mail client
 
-메일 자동화를 위해 클라이언트를 썬더버드로 수정합니다.
+메일 자동화를 위해 클라이언트를 썬더버드로 수정합니다. 터미널에서 아래 명령어를 타이핑합니다.
 
 ```bash
 xdg-settings set default-url-scheme-handler mailto thunderbird.desktop
