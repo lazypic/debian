@@ -6,6 +6,23 @@
 - 개발환경 자동화를 위해 사용합니다.
 - amd64, arm64, riscv64를 지원합니다. FreeBSD보다 와이파이를 좀더 잘 지원합니다.
 
+## 계보
+
+```
+Debian
+├── Ubuntu (Canonical)
+│   ├── Linux Mint
+│   ├── Pop!_OS
+│   ├── elementary OS
+│   ├── Zorin OS
+│   └── (수십 종의 *buntu 파생판)
+├── Kali Linux
+├── MX Linux
+├── Raspberry Pi OS
+├── Tails
+└── Parrot OS
+```
+
 ## add apt sources
 
 Debian 리눅스 설치 이후 패키지 리포지토리 소스를 추가합니다.
