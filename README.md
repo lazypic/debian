@@ -1,6 +1,6 @@
 # Debian
 
-- 사용 버전: 12 또는 13 버전
+- 사용 버전: 13 버전
 - 하드웨어 지원이 잘 되기 때문에 개인 업무용 노트북, 개발환경 또는 여러 디스크의 연결이 필요없는 데스크탑에 사용합니다.
 - 롤링 릴리즈 OS가 아니고 OpenZFS 처럼 강력한 파일시스템은 아니기 때문에 안정성이 필요로 하는 대규모 인프라에서는 사용하지 않습니다.
 - 개발환경 자동화를 위해 사용합니다.
@@ -28,18 +28,27 @@ Debian
 Debian 리눅스 설치 이후 패키지 리포지토리 소스를 추가합니다.
 
 ```bash
-vi /etc/apt/sources.list
+vi /etc/apt/sources.list.d/debian.sources
 ```
 
 ```
-deb http://deb.debian.org/debian bookworm main non-free-firmware
-deb-src http://deb.debian.org/debian bookworm main non-free-firmware
+Types: deb
+URIs: https://deb.debian.org/debian
+Suites: trixie trixie-updates
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
-deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
-deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+Types: deb
+URIs: https://security.debian.org/debian-security
+Suites: trixie-security
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 
-deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
-deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
+Types: deb
+URIs: https://deb.debian.org/debian
+Suites: trixie-backports
+Components: main contrib non-free non-free-firmware
+Signed-By: /usr/share/keyrings/debian-archive-keyring.gpg
 ```
 
 pkg를 인스톨 합니다.
