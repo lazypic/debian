@@ -63,7 +63,7 @@ pkg를 인스톨 합니다.
 ```bash
 apt update
 apt upgrade
-apt install -y htop vim neovim git mpv bat audacious nfs-common ffmpeg openimageio-tools curl rsync golang mpg123 gcolor3 sendmail mpack mutt vim-gtk3 libnotify-bin
+apt install -y htop vim neovim git mpv bat audacious nfs-common ffmpeg openimageio-tools curl rsync golang mpg123 gcolor3 sendmail mpack mutt vim-gtk3 libnotify-bin wireguard
 apt install pandoc fonts-nanum texlive-xetex mdp
 ```
 
